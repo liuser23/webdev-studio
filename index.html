@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebDev Studio</title>
+    <title>Josh's Bakery</title>
     <!-- import javascript variables and functions -->
     <script src="app.js" defer></script>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
     <div id="cs1300-gallery">
-      <h1>Welcome to my bakery</h1>
-      <p>Add your own images and styles!</p>
-
+      <div id="header">
+        <h1>Welcome to my bakery!</h1>
+        <p>Add your own images and styles!</p>
+      </div>
       <!-- TODO: PART I Add your own images and use CSS flex to make sure they work on different screen sizes -->
       <div class="gallery-container">
-        <img class="gallery-item" src="./assets/jeff.jpg" alt="jeff watching u">
+        <img
+          class="gallery-item"
+          src="./assets/jeff.jpg"
+          alt="jeff watching u"
+        />
+        <img
+          class="gallery-item"
+          src="./assets/cupcake1.jpg"
+          alt="flowery pink cupcakes"
+        />
+        <img
+          class="gallery-item"
+          src="./assets/cupcake2.jpg"
+          alt="vanilla cupcakes"
+        />
+        <img
+          class="gallery-item"
+          src="./assets/cupcake3.jpg"
+          alt="a rainbow cupcake"
+        />
+        <img
+          class="gallery-item"
+          src="./assets/cupcake4.jpg"
+          alt="strawberry cupcakes"
+        />
+        <img
+          class="gallery-item"
+          src="./assets/cupcake5.jpg"
+          alt="unicorn cupcakes"
+        />
       </div>
 
       <!-- TODO: PART II Uncomment the line below, and hook up this button to display data from an API -->
-      <!-- <button onclick="updatePage()">Press this button to display some fruit data</button> -->
+      <div id="fruitData">
+        <p>Fruit Data: (Names of fruits with more than 15 g of carbs)</p>
+        <ul id="fruit-list"></ul>
+        <button onclick="updatePage()">
+          Press this button to display some fruit data
+        </button>
+      </div>
     </div>
   </body>
-
 </html>

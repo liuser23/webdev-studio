@@ -1,5 +1,9 @@
 #cs1300-gallery {
-  background-color: lightblue;
+  background-image: linear-gradient(to bottom right, rgb(119, 199, 226), white);
+  padding-bottom: 3vh;
+}
+#header {
+  padding-left: 0.8vw;
 }
 
 /* Uncomment below if images are way too big.
@@ -8,7 +12,28 @@ Selects all image tags and makes them 500px;
 /*img {*/
 /*  width: 500px;*/
 /*}*/
+.gallery-item {
+  height: 30vh;
+  max-height: 400px;
+  margin-top: 3vh;
+}
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+h1,
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+#fruitData {
+  padding-top: 3vh;
+  padding-left: 0.8vw;
 }
